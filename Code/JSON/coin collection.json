@@ -1,0 +1,411 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "coin collection",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddCoinIntent",
+                    "slots": [
+                        {
+                            "name": "coin",
+                            "type": "coin",
+                            "samples": [
+                                "{coin}"
+                            ]
+                        },
+                        {
+                            "name": "year",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER",
+                            "samples": [
+                                "{year}",
+                                "The {coin} was made in {year}",
+                                "The coin was made in {year}",
+                                "It was made in {year}"
+                            ]
+                        },
+                        {
+                            "name": "city",
+                            "type": "city",
+                            "samples": [
+                                "{city}",
+                                "The {coin} is made in {city}",
+                                "It is made in {city}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I have {year} {city} {coin}",
+                        "I have a {year} {city} {coin}",
+                        "add a {year} {city} {coin}",
+                        "add {year}  {city} {coin}",
+                        "{coin}",
+                        "add a coin",
+                        "add a {coin} to my collection",
+                        "add a coin to my collection",
+                        "I have a {coin} from {year} made in {city}"
+                    ]
+                },
+                {
+                    "name": "ReadCoinIntent",
+                    "slots": [
+                        {
+                            "name": "coin",
+                            "type": "coin"
+                        },
+                        {
+                            "name": "year",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER"
+                        },
+                        {
+                            "name": "city",
+                            "type": "city"
+                        }
+                    ],
+                    "samples": [
+                        "check",
+                        "check what coins i have",
+                        "What coins do I have",
+                        "Check for a {city} {year} {coin}",
+                        "Check for a {city} {coin} {year}",
+                        "Check for a {year} {coin} {city}",
+                        "Check for a {coin} {year} {city}",
+                        "Check for a {year} {city} {coin}",
+                        "Check for a {coin} {city} {year}",
+                        "How many {coin} of the mint mark {city} and year {year} do I have",
+                        "How many coins of the mint mark {city} and year {year} do I have",
+                        "How many coins of the year {year} and mint mark of {city} do I have",
+                        "How many {coin} of the year {year} and mint mark of {city} do I have",
+                        "How many {coin} of the year {year} do I have",
+                        "How many coins of the mint mark {city} do I have",
+                        "How many coins of the year {year} do I have",
+                        "how many coins do i have",
+                        "How many {coin} of the mint mark {city} do I have",
+                        "How many {coin} of the {year} do I have",
+                        "how many {coin} are minted in {city}",
+                        "how many {coin} were made in {city}",
+                        "how many {coin} were made in {year}",
+                        "how many coins were made in {city}",
+                        "how many coins were made in {year}",
+                        "how many coins are minted in {city}",
+                        "how many {coin}",
+                        "do i have a {coin}",
+                        "add {year} {city}",
+                        "add {year} {coin}",
+                        "how many coins do i have with mint mark  {city}",
+                        "how many coins do i have with  {city} mint",
+                        "how many {coin} do I have with a {city} mint mark",
+                        "how many {coin} do I have with a {city} mint",
+                        "how many {coin} do I have in  {year}",
+                        "how many {coin} do I have in the year {year}",
+                        "How many coins of the {year} do I have",
+                        "How many {coin} do I have",
+                        "Do I have",
+                        "Do I have {coin} in the year {year}",
+                        "Do I have a {coin} from {year} made in {city}",
+                        "How many {coin} of the {year} do I have in {city}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "coin",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Dollar",
+                                "synonyms": [
+                                    "Dollars",
+                                    "Dollar Coin"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Half Dollar",
+                                "synonyms": [
+                                    "Half Dollars",
+                                    "Half"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dime",
+                                "synonyms": [
+                                    "dimes"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Quarter",
+                                "synonyms": [
+                                    "quarters"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nickel",
+                                "synonyms": [
+                                    "nickels"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Penny",
+                                "synonyms": [
+                                    "pennies"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "city",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Dahlonega"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Charlotte",
+                                "synonyms": [
+                                    "C"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "New Orleans",
+                                "synonyms": [
+                                    "O"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Carson City",
+                                "synonyms": [
+                                    "CC"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "none",
+                                "synonyms": [
+                                    "blank"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "West Point",
+                                "synonyms": [
+                                    "W"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "San Francisco",
+                                "synonyms": [
+                                    "S"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Denver",
+                                "synonyms": [
+                                    "D"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Philadelphia",
+                                "synonyms": [
+                                    "P"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AddCoinIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "coin",
+                            "type": "coin",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1428158795602.400620315490"
+                            }
+                        },
+                        {
+                            "name": "year",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1428158795602.264083207615"
+                            }
+                        },
+                        {
+                            "name": "city",
+                            "type": "city",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1428158795602.1051905538092"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ReadCoinIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "coin",
+                            "type": "coin",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "year",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "city",
+                            "type": "city",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1428158795602.400620315490",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What denomination of coin do you have?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What type of coin do you have?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1428158795602.264083207615",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What year was the coin minted?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What year was the coin made?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1428158795602.1051905538092",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Where was the {coin} made?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Where was the coin made?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What is the mint mark?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1428158795602",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Ok, you have a {coin} from {year} made in {city} . Do you want me to add it too your coin collection?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1523952200577.999820263596",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What denomination of coin do want me to check?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1523952200577.1170974429523",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What year was the coin your looking for minted?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1523952200577.617590319039",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Where was the {coin} your looking for made?"
+                    }
+                ]
+            }
+        ]
+    }
+}
